@@ -911,9 +911,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                              [
                               InlineKeyboardButton('🫨ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=SUPPORT_CHAT),
                               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                            ],[
-                              InlineKeyboardButton("😇ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ😇", url="https://t.me/+4nzja42ELQwzOWVl")
-                             ]
+                            ]
                             ]
                         )
                     )
@@ -1004,9 +1002,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  [
                   InlineKeyboardButton('🫨ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=SUPPORT_CHAT),
                   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                ],[
-                  InlineKeyboardButton("😇ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ😇", url="https://t.me/+4nzja42ELQwzOWVl")
-                 ]
+                ]
                 ]
             )
         )
@@ -1452,8 +1448,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
+            InlineKeyboardButton('Gʀᴏᴜᴘ', url=GRP_LNK),
+            InlineKeyboardButton('Sᴏᴜʀᴄᴇ', callback_data='source')
         ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
@@ -1643,7 +1639,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "shortlink_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("🤵ᴄᴏɴᴛᴀᴄᴛ", url="telegram.me/J_shree_ram")
+                    InlineKeyboardButton("🤵ᴄᴏɴᴛᴀᴄᴛ", url="telegram.me/Ashish_xlr8")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1843,8 +1839,6 @@ async def auto_filter(client, msg, spoll=False):
     #         InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
     #     ])
         btn.insert(0, [
-            InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
         ])
     # if ENABLE_TUTORIAL == True:
     #     btn.insert(0, [
