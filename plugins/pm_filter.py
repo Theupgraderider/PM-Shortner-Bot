@@ -149,7 +149,6 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton ("How To Download", url=await get_tutorial(query.message.chat.id))
         ])
     else:
         btn = []
@@ -443,10 +442,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         )
     # if ENABLE_SHORTLINK == True:
     btn.insert(0, [
-   #    InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-   #    InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-        InlineKeyboardButton ("How To Download", url=await get_tutorial(query.message.chat.id))
-    ])
+   ])
     # else:
     #     btn.insert(0, [
     #         InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -614,8 +610,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
     btn.insert(0, [
-        InlineKeyboardButton ("How To Download", url=await get_tutorial(query.message.chat.id))
-    ])
+        ])
     
 
     # btn.insert(0, [
